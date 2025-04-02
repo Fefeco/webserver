@@ -20,7 +20,7 @@ public:
 
 private:
   Socket(void);
-	int _socketFd;
-	int _reuseOpt;
+  int _socketFd;
+  int _reuseOpt;
   struct sockaddr_in _addressIn;
 };

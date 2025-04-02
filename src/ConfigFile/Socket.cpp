@@ -6,7 +6,7 @@
 /*   By: fcarranz <fcarranz@student.42barcelo>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/01 11:36:23 by fcarranz          #+#    #+#             */
-/*   Updated: 2025/04/02 20:10:54 by fcarranz         ###   ########.fr       */
+/*   Updated: 2025/04/02 20:23:48 by fcarranz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,4 +41,4 @@ Socket::Socket(int port) : _reuseOpt(1) {
   }
 }
 
-~Socket(void) {}
+Socket::~Socket(void) { close(_socketFd); }
